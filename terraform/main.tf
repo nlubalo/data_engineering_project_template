@@ -46,7 +46,7 @@ resource "aws_security_group" "sde_security_group" {
   }
 }
 
-# Create EC2 with IAM role to allow EMR, Redshift, & S3 access and security group 
+# Create EC2 with IAM role to allow EMR, Redshift, & S3 access and security group
 resource "tls_private_key" "custom_key" {
   algorithm = "RSA"
   rsa_bits  = 4096

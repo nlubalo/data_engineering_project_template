@@ -30,7 +30,7 @@ isort:
 type:
 	docker exec webserver mypy --ignore-missing-imports /opt/airflow
 
-lint: 
+lint:
 	docker exec webserver flake8 /opt/airflow/dags
 
 ci: isort format type lint pytest
